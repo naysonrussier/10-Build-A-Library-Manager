@@ -1,0 +1,23 @@
+doctype html
+html(ng-app="app")
+	include ./partials/_head.pug
+		
+	body
+		include ./partials/_nav.pug
+		div(ng-view)
+
+	script(src="/vendor/angular.min.js")
+	script(src="/vendor/angular-route.min.js")
+	script(src="/vendor/dirPagination.js")
+
+	script(src="/js/jquery-3.1.1.min.js")
+	script(src="/js/app.js")
+	script(src="/js/route-config.js")
+	script(src="/js/controllers/errors.js")
+	script(src="/js/controllers/books.js")
+	script(src="/js/controllers/loans.js")
+	script(src="/js/controllers/patrons.js")
+	script(src="/js/controllers/root.js")
+	script(src="/js/services/books.js")
+	script(src="/js/services/loans.js")
+	script(src="/js/services/patrons.js")
